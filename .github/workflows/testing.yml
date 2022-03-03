@@ -31,10 +31,16 @@ jobs:
         with:
           python-version: 3.8
 
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       # Run python script to start server
       - name: Execute python script
         run: |
-          python mysite/manage.py runserver
+          python3 mysite/manage.py runserver
 
       # Make directory to upload the test results
       - name: Make Directory for results
