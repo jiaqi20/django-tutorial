@@ -34,7 +34,7 @@ jobs:
       # Run python script to start server
       - name: Execute python script
         run: |
-          python manage.py runserver
+          python mysite/manage.py runserver
 
       # Make directory to upload the test results
       - name: Make Directory for results
