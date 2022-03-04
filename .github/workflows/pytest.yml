@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Move into the Django project folder (./mysite) and run pytest
+      # Test with pytest
       - name: Test with pytest
         working-directory: ./mysite
         run: pytest -vv
