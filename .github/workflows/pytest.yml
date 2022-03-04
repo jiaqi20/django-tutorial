@@ -1,5 +1,5 @@
 # The name of the action
-name: Django Tests
+name: Django Pytests
 # When the action is triggered
 on:
   push:
