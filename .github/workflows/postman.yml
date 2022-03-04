@@ -25,23 +25,6 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
-      # Install python on the runner
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-
-      # Install dependencies
-      - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      # Run python script to start server
-      - name: Execute python script
-        run: |
-          python3 mysite/manage.py runserver
-
       # Make directory to upload the test results
       - name: Make Directory for results
         run: mkdir -p testResults
