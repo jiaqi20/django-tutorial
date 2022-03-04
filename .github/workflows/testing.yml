@@ -24,5 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Django Testing
+        working-directory: ./mysite
         run: |
           python3 manage.py test
