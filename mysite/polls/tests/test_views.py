@@ -2,7 +2,7 @@ from django.urls import reverse
 #from django.test import Client
 
 def test_nothing():
-    """A dummy test"""
+    """A dummy test  """
     assert True
 
 def test_index_view(client):
