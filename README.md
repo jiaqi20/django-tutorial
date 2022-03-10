@@ -1,6 +1,6 @@
 # django-tutorial
 
-Django tutorial based on https://docs.djangoproject.com/en/4.0/intro/tutorial01/
+Django tutorial based on https://docs.djangoproject.com/en/4.0/intro/
 
 ## Set Up and Testing
 
